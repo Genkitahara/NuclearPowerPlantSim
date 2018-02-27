@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\HideButton.cs" />
     <Compile Include="Assets\Scripts\Reactor.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
   </ItemGroup>
