@@ -1,24 +1,100 @@
 fileFormatVersion: 2
-guid: e77643973e90fd649a090cd2a24795d6
-timeCreated: 1519855388
+guid: 087698cf8b150a540987e58c248e6e46
+timeCreated: 1519904980
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Camera
-    100002: Lamp
-    100004: Sphere
-    100006: //RootNode
-    400000: Camera
-    400002: Lamp
-    400004: Sphere
-    400006: //RootNode
-    2000000: Camera
-    2100000: No Name
-    2300000: Sphere
-    3300000: Sphere
-    4300000: Sphere
-    10800000: Lamp
+    100000: Body1
+    100002: Body1 1
+    100004: Body1 2
+    100006: Body1 3
+    100008: Body1 4
+    100010: Body1 5
+    100012: Body2
+    100014: Body2 1
+    100016: Body3
+    100018: Body4
+    100020: Body5
+    100022: Body6
+    100024: //RootNode
+    100026: Component1
+    100028: Component1 1
+    100030: Component1:1
+    100032: Component1:2
+    100034: Component2
+    100036: Component2:1
+    100038: Component3
+    100040: Component3:1
+    100042: Component4
+    100044: Component4:1
+    100046: Component5
+    100048: Component5:1
+    100050: Component6
+    100052: Component6:1
+    400000: Body1
+    400002: Body1 1
+    400004: Body1 2
+    400006: Body1 3
+    400008: Body1 4
+    400010: Body1 5
+    400012: Body2
+    400014: Body2 1
+    400016: Body3
+    400018: Body4
+    400020: Body5
+    400022: Body6
+    400024: //RootNode
+    400026: Component1
+    400028: Component1 1
+    400030: Component1:1
+    400032: Component1:2
+    400034: Component2
+    400036: Component2:1
+    400038: Component3
+    400040: Component3:1
+    400042: Component4
+    400044: Component4:1
+    400046: Component5
+    400048: Component5:1
+    400050: Component6
+    400052: Component6:1
+    2100000: Steel - Satin
+    2300000: Body1
+    2300002: Body1 1
+    2300004: Body1 2
+    2300006: Body1 3
+    2300008: Body1 4
+    2300010: Body1 5
+    2300012: Body2
+    2300014: Body2 1
+    2300016: Body3
+    2300018: Body4
+    2300020: Body5
+    2300022: Body6
+    3300000: Body1
+    3300002: Body1 1
+    3300004: Body1 2
+    3300006: Body1 3
+    3300008: Body1 4
+    3300010: Body1 5
+    3300012: Body2
+    3300014: Body2 1
+    3300016: Body3
+    3300018: Body4
+    3300020: Body5
+    3300022: Body6
+    4300000: Body1
+    4300002: Body1
+    4300004: Body1
+    4300006: Body2
+    4300008: Body1
+    4300010: Body2
+    4300012: Body3
+    4300014: Body4
+    4300016: Body5
+    4300018: Body6
+    4300020: Body1
   externalObjects: {}
   materials:
     importMaterials: 1
