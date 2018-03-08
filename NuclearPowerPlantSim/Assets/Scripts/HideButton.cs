@@ -16,8 +16,8 @@ public class HideButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.LeftShift))InformationAnimator.SetBool("isHide", !InformationAnimator.GetBool("isHide"));
-        if (Input.GetKeyDown(KeyCode.LeftControl)) AlertAnimatior.SetBool("isHide", !AlertAnimatior.GetBool("isHide"));
+        if (Input.GetKeyDown(KeyCode.LeftControl))InformationAnimator.SetBool("isHide", !InformationAnimator.GetBool("isHide"));
+        if (Input.GetKeyDown(KeyCode.LeftShift)) AlertAnimatior.SetBool("isHide", !AlertAnimatior.GetBool("isHide"));
 
     }
     public void InformationPressd()

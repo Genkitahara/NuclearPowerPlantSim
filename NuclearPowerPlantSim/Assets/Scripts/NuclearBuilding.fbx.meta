@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0ccb8caaeeb1c3148bab0940a691d3b8
-timeCreated: 1520282573
+guid: 0e59130d7a28bb7448edef6362ccb4c4
+timeCreated: 1520278350
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -13,6 +13,40 @@ ModelImporter:
     100010: "\u56DB\u968E\u5E8A"
     100012: "\u5EFA\u5C4B\u5916\u58C1"
     100014: "\u5EFA\u5C4B\u5E95\u9762"
+    100016: Body1
+    100018: Body10
+    100020: Body12
+    100022: Body14
+    100024: Body15
+    100026: Body3
+    100028: Body37
+    100030: Body39
+    100032: Body40
+    100034: Body41
+    100036: Body42
+    100038: Body43
+    100040: Body44
+    100042: Body45
+    100044: Body46
+    100046: Body48
+    100048: Body49
+    100050: Body5
+    100052: Body51
+    100054: Body52
+    100056: Body53
+    100058: Body55
+    100060: Body56
+    100062: Body8
+    100064: BuldingWall
+    100066: EastBuldingWall
+    100068: EastSecondFloor
+    100070: FirstFloor
+    100072: ForthFloor
+    100074: IC
+    100076: IC:1
+    100078: SecondFloor
+    100080: ThirdFloor
+    100082: UnderFirstFloor
     400000: //RootNode
     400002: "\u30B5\u30FC\u30D3\u30B9\u30D5\u30ED\u30A2(\u4E94\u968E\uFF09\u5E8A"
     400004: "\u4E00\u968E\u5E8A"
@@ -21,7 +55,42 @@ ModelImporter:
     400010: "\u56DB\u968E\u5E8A"
     400012: "\u5EFA\u5C4B\u5916\u58C1"
     400014: "\u5EFA\u5C4B\u5E95\u9762"
+    400016: Body1
+    400018: Body10
+    400020: Body12
+    400022: Body14
+    400024: Body15
+    400026: Body3
+    400028: Body37
+    400030: Body39
+    400032: Body40
+    400034: Body41
+    400036: Body42
+    400038: Body43
+    400040: Body44
+    400042: Body45
+    400044: Body46
+    400046: Body48
+    400048: Body49
+    400050: Body5
+    400052: Body51
+    400054: Body52
+    400056: Body53
+    400058: Body55
+    400060: Body56
+    400062: Body8
+    400064: BuldingWall
+    400066: EastBuldingWall
+    400068: EastSecondFloor
+    400070: FirstFloor
+    400072: ForthFloor
+    400074: IC
+    400076: IC:1
+    400078: SecondFloor
+    400080: ThirdFloor
+    400082: UnderFirstFloor
     2100000: Steel - Satin
+    2100002: Paint - Metallic (Red)
     2300000: "\u30B5\u30FC\u30D3\u30B9\u30D5\u30ED\u30A2(\u4E94\u968E\uFF09\u5E8A"
     2300002: "\u4E00\u968E\u5E8A"
     2300004: "\u4E09\u968E\u5E8A"
@@ -29,6 +98,38 @@ ModelImporter:
     2300008: "\u56DB\u968E\u5E8A"
     2300010: "\u5EFA\u5C4B\u5916\u58C1"
     2300012: "\u5EFA\u5C4B\u5E95\u9762"
+    2300014: Body1
+    2300016: Body10
+    2300018: Body12
+    2300020: Body14
+    2300022: Body15
+    2300024: Body3
+    2300026: Body37
+    2300028: Body39
+    2300030: Body40
+    2300032: Body41
+    2300034: Body42
+    2300036: Body43
+    2300038: Body44
+    2300040: Body45
+    2300042: Body46
+    2300044: Body48
+    2300046: Body49
+    2300048: Body5
+    2300050: Body51
+    2300052: Body52
+    2300054: Body53
+    2300056: Body55
+    2300058: Body56
+    2300060: Body8
+    2300062: BuldingWall
+    2300064: EastBuldingWall
+    2300066: EastSecondFloor
+    2300068: FirstFloor
+    2300070: ForthFloor
+    2300072: SecondFloor
+    2300074: ThirdFloor
+    2300076: UnderFirstFloor
     3300000: "\u30B5\u30FC\u30D3\u30B9\u30D5\u30ED\u30A2(\u4E94\u968E\uFF09\u5E8A"
     3300002: "\u4E00\u968E\u5E8A"
     3300004: "\u4E09\u968E\u5E8A"
@@ -36,6 +137,38 @@ ModelImporter:
     3300008: "\u56DB\u968E\u5E8A"
     3300010: "\u5EFA\u5C4B\u5916\u58C1"
     3300012: "\u5EFA\u5C4B\u5E95\u9762"
+    3300014: Body1
+    3300016: Body10
+    3300018: Body12
+    3300020: Body14
+    3300022: Body15
+    3300024: Body3
+    3300026: Body37
+    3300028: Body39
+    3300030: Body40
+    3300032: Body41
+    3300034: Body42
+    3300036: Body43
+    3300038: Body44
+    3300040: Body45
+    3300042: Body46
+    3300044: Body48
+    3300046: Body49
+    3300048: Body5
+    3300050: Body51
+    3300052: Body52
+    3300054: Body53
+    3300056: Body55
+    3300058: Body56
+    3300060: Body8
+    3300062: BuldingWall
+    3300064: EastBuldingWall
+    3300066: EastSecondFloor
+    3300068: FirstFloor
+    3300070: ForthFloor
+    3300072: SecondFloor
+    3300074: ThirdFloor
+    3300076: UnderFirstFloor
     4300000: "\u5EFA\u5C4B\u5E95\u9762"
     4300002: "\u5EFA\u5C4B\u5916\u58C1"
     4300004: "\u4E00\u968E\u5E8A"
@@ -43,6 +176,38 @@ ModelImporter:
     4300008: "\u4E09\u968E\u5E8A"
     4300010: "\u56DB\u968E\u5E8A"
     4300012: "\u30B5\u30FC\u30D3\u30B9\u30D5\u30ED\u30A2(\u4E94\u968E\uFF09\u5E8A"
+    4300014: Body1
+    4300016: Body3
+    4300018: Body5
+    4300020: Body8
+    4300022: Body10
+    4300024: Body12
+    4300026: Body14
+    4300028: Body15
+    4300030: Body48
+    4300032: Body49
+    4300034: Body37
+    4300036: Body39
+    4300038: Body40
+    4300040: Body41
+    4300042: Body42
+    4300044: Body43
+    4300046: Body44
+    4300048: Body45
+    4300050: Body46
+    4300052: Body51
+    4300054: Body52
+    4300056: Body53
+    4300058: Body55
+    4300060: Body56
+    4300062: UnderFirstFloor
+    4300064: BuldingWall
+    4300066: EastBuldingWall
+    4300068: FirstFloor
+    4300070: EastSecondFloor
+    4300072: SecondFloor
+    4300074: ThirdFloor
+    4300076: ForthFloor
   externalObjects: {}
   materials:
     importMaterials: 1
