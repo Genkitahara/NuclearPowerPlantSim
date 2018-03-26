@@ -288,11 +288,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ColideLancher.cs" />
     <Compile Include="Assets\Scripts\ControlRodMap.cs" />
     <Compile Include="Assets\Scripts\CRT.cs" />
     <Compile Include="Assets\Scripts\Gizmo.cs" />
     <Compile Include="Assets\Scripts\HideButton.cs" />
     <Compile Include="Assets\Scripts\Mychara.cs" />
+    <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Reactor.cs" />
     <Compile Include="Assets\Scripts\StartAwake.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
@@ -300,7 +302,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CRT.shader" />
-    <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

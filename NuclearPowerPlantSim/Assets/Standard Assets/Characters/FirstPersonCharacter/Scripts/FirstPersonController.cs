@@ -10,9 +10,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
-        private bool isPause = false;
-        [SerializeField] private GameObject pauseUI;  //　ポーズUIのインスタンス
-        [SerializeField] private GameObject instancePauseUI;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -58,61 +55,32 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
-            Cursor.visible = false;
         }
 
 
         // Update is called once per frame
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            RotateView();
+            // the jump state needs to read here to make sure it is not missed
+            if (!m_Jump)
             {
-                if (instancePauseUI == null)
-                {
-                    instancePauseUI = GameObject.Instantiate(pauseUI) as GameObject;
-                    Time.timeScale = 0f;
-                    isPause = true;
-                    //Cursor.visible = true;
-                    //m_MouseLook.m_cursorIsLocked = false;
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-                }
-                else
-                {
-                    Destroy(instancePauseUI);
-                    Time.timeScale = 1f;
-                    isPause = false;
-                    Cursor.lockState = CursorLockMode.Locked;
-                    Cursor.visible = false;
-                    print("OK");
-                }
-                
+                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
-            if (isPause == false)
+
+            if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                RotateView();
-                // the jump state needs to read here to make sure it is not missed
-                if (!m_Jump)
-                {
-                    m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-                }
-
-                if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
-                {
-                    StartCoroutine(m_JumpBob.DoBobCycle());
-                    PlayLandingSound();
-                    m_MoveDir.y = 0f;
-                    m_Jumping = false;
-                }
-                if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
-                {
-                    m_MoveDir.y = 0f;
-                }
-
-                m_PreviouslyGrounded = m_CharacterController.isGrounded;
+                StartCoroutine(m_JumpBob.DoBobCycle());
+                PlayLandingSound();
+                m_MoveDir.y = 0f;
+                m_Jumping = false;
             }
+            if (!m_CharacterController.isGrounded && !m_Jumping && m_PreviouslyGrounded)
+            {
+                m_MoveDir.y = 0f;
+            }
+
+            m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
 

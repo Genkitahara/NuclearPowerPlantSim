@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.FirstPerson
@@ -20,7 +19,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private Quaternion m_CharacterTargetRot;
         private Quaternion m_CameraTargetRot;
-        public bool m_cursorIsLocked = true;
+        private bool m_cursorIsLocked = true;
 
         public void Init(Transform character, Transform camera)
         {
@@ -75,7 +74,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
-            /*if(Input.GetKeyUp(KeyCode.Escape))
+            if(Input.GetKeyUp(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
             }
@@ -93,7 +92,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-            }*/
+            }
         }
 
         Quaternion ClampRotationAroundXAxis(Quaternion q)

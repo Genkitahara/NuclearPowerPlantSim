@@ -1,25 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
+using System.Collections;
 
-public class ControlRodMap : MonoBehaviour {
+public class ControlRodMap : MonoBehaviour//,PointerDownHandler
+{
 
-    [SerializeField]
-    private Image CR1,CR2,CR3,CR4,CR5,CR6,CR7;
-    [SerializeField]
-    private Transform CR1B;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-    void CR1ChangeColor()
+    public Transform cube;
+    
+    // Use this for initialization
+    void Start()
     {
-    CR1.color = new Color(0, 1, 0, 1);
+
+    }
+    /*public void OnPointerDown(PointerEventData _data)
+    {
+        Debug.Log("clicked");
+        cube.Translate(0, 1, 0);
+    }*/
+    public void Clicne()
+    {
+        Debug.Log("OK");
     }
 }
