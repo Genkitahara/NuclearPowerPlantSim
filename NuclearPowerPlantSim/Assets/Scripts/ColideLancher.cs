@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class ColideLancher : MonoBehaviour {
 
+    private  static ControlRodDrive RodDrive;
     public new Camera camera;
     public GameObject SQButton;
     public GameObject SQCancelButton;
 
-    public Image[] ControlRods;
-    private Color RodInsertColor,RodPulloutColor;
     private Image test;
     RaycastHit hit;
 
@@ -20,9 +19,7 @@ public class ColideLancher : MonoBehaviour {
     void Start () {
         SQButton = GameObject.Find("SQ");
         SQCancelButton = GameObject.Find("SQ2");
-        for (i = 1; i < 206; i++)ControlRods[i-1] = GameObject.Find("Rod" + i).GetComponent<Image>();
-        RodInsertColor = new Color(0, 1, 0, 1);
-        RodPulloutColor = new Color(1, 1, 1, 1);
+        RodDrive = gameObject.AddComponent<ControlRodDrive>();
     }
 	
 	// Update is called once per frame
@@ -33,8 +30,8 @@ public class ColideLancher : MonoBehaviour {
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
                 Debug.Log(hit.collider.gameObject.name);
-                if (hit.collider.gameObject.name == "SQ")   for (i = 0; i < 205; i++) ControlRods[i].color = RodInsertColor;
-                if (hit.collider.gameObject.name == "SQ2") for (i = 0; i < 205; i++) ControlRods[i].color = RodPulloutColor;
+                if (hit.collider.gameObject.name == "SQ") RodDrive.ControlRodInsertStart();
+                if (hit.collider.gameObject.name == "SQ2") RodDrive.ControlRodPullOutStart();
             }
         }
  

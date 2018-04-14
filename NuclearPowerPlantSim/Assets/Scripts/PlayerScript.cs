@@ -10,7 +10,8 @@ public class PlayerScript : MonoBehaviour {
     public Transform camera;
     public Transform player;
 
-    public float moveSpeed = 3f;
+    public float WalkSpeed = 3f;
+    public float RunSpeed = 6f;
 
     void Start()
     {
@@ -38,7 +39,8 @@ public class PlayerScript : MonoBehaviour {
         //Debug.Log(moveForward);
 
         // 移動方向にスピードを掛ける。ジャンプや落下がある場合は、別途Y軸方向の速度ベクトルを足す。
-        rb.velocity = moveForward * moveSpeed + new Vector3(0, rb.velocity.y, 0);
+        if(Input.GetKey(KeyCode.LeftShift)) rb.velocity = moveForward * RunSpeed + new Vector3(0, rb.velocity.y, 0);
+        else rb.velocity = moveForward * WalkSpeed + new Vector3(0, rb.velocity.y, 0);
 
         //Debug.Log(rb.velocity);
 

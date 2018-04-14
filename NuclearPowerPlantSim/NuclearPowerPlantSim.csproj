@@ -289,16 +289,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ColideLancher.cs" />
-    <Compile Include="Assets\Scripts\ControlRodMap.cs" />
+    <Compile Include="Assets\Scripts\ControlRodDrive.cs" />
     <Compile Include="Assets\Scripts\CRT.cs" />
     <Compile Include="Assets\Scripts\Gizmo.cs" />
-    <Compile Include="Assets\Scripts\HideButton.cs" />
     <Compile Include="Assets\Scripts\Mychara.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\Reactor.cs" />
     <Compile Include="Assets\Scripts\StartAwake.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
-    <Compile Include="Assets\Scripts\ValveControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CRT.shader" />
